@@ -10,15 +10,49 @@
         <link rel="stylesheet" href="../pizzaGod/css/font_awesome/css/all.css" />
         <link rel="stylesheet" href="../pizzaGod/css/login.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
+        
+        <script defer src="../pizzaGod/js/login.js"></script>
+
+        <!-- Fronts links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Gloria+Hallelujah&family=Hanalei&display=swap" rel="stylesheet">    
     </head>
 
     <body>
         <div class="top-area">
-            
+            <div class="title">SHIZZA</div>
+            <div class="shop">
+                <button data-modal-target="#modal" class="material-icons-outlined" id="person">person_outline</button>
+                <button class="material-icons-outlined" id="cart">shopping_cart</button>
+            </div>
         </div>
 
+        <div class="navi-area">
+            <div class="navi">
+                <input type="button" value="Menu" />
+                <input type="button" value="Promos" />
+                <input type="button" value="Find Me" />
+                <input type="button" value="More" />
+            </div>
+        </div>
+        
         <div class="bot-area">
+            <div class="signature">@Made by Hongwei Shi</div>
+        </div>
 
+        <div class="mid-area">
+            <!-- <button data-modal-target="#modal">Open Modal</button> -->
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="title">Example Modal</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+              </div>
+            </div>
+            <div id="overlay"></div>
         </div>
     </body>
 </html>
