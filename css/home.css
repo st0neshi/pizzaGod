@@ -47,10 +47,6 @@ body {
     justify-content: space-between;
 }
 
-.navi-area .navi {
-
-}
-
 .navi input[type="button"] {
     color: tomato;
     font-size: 15px;
@@ -86,67 +82,61 @@ body {
     color: white;
 }
 
-.mid-area {
+.news-area {
     position: relative;
+    background-color: whitesmoke;
+    height: auto;
+
+    -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: white;
-    width: 500px;
-    max-width: 80%;
-  }
-  
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-header {
-    padding: 10px 15px;
+.news-area .top-news {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-  }
-  
-  .modal-header .title {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .modal-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .modal-body {
-    padding: 10px 15px;
-  }
-  
-  #overlay {
+    justify-content: center;
+    height: 600px;
+}
+
+.top-news .top-news-ad {
+    width: 98%;
+    background-image: url(../imgs/top_news.jpg);
+    background-size: cover;
+    margin-top: 1%;
+}
+
+.top-news #top-news-text {
     position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
+    color: white;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px orange;
+    margin-left: 10px;
+}
+
+.top-news #top-news-button {
+    position: relative;
+    margin-top: 530px;
+    margin-left: 30px;
+}
+
+.news-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 22px;
+    border: 2px solid white;
+    color: black;
+    cursor: pointer;
+}
+
+.news-button:hover{
+    background-color: tomato;
+    transition: 0.5s;
+}
+
+#top_news_text_2, #top_news_text_3 {
+    margin-top: -90px;
+}
+
+.popup {
+    position: relative;
+}
