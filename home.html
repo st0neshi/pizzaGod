@@ -14,64 +14,88 @@
         <script defer src="../pizzaGod/js/login.js"></script>
 
         <!-- Fronts links -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Gloria+Hallelujah&family=Hanalei&display=swap" rel="stylesheet">    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Gloria+Hallelujah&family=Hanalei&display=swap" rel="stylesheet" />    
     </head>
 
     <body>
-        <div class="top-area">
-            <div class="title">SHIZZA</div>
-            <div class="shop">
-                <button data-modal-target="#modal" class="material-icons-outlined" id="person">person_outline</button>
-                <button class="material-icons-outlined" id="cart">shopping_cart</button>
-            </div>
-        </div>
-
-        <div class="navi-area">
-            <div class="navi">
-                <input type="button" value="Menu" />
-                <input type="button" value="Promos" />
-                <input type="button" value="Find Me" />
-                <input type="button" value="More" />
-            </div>
-        </div>
-        
-        <div class="bot-area">
-            <div class="signature">@Made by Hongwei Shi</div>
-        </div>
-
-        <div class="news-area">
-            <div class="top-news">
-                <div class="top-news-ad">
-                    <!-- Imgs -->
-                    <div id="top-news-text">
-                        <p id="top_news_text_1">NEW Shi's</p>
-                        <p id="top_news_text_2">Unbelievable Secret</p>
-                        <p id="top_news_text_3">Cheese Pizza</p>
+        <div class="container">
+            <div class="header">
+                <div class="title-area">
+                    <div class="title">
+                        <p>SHIZZA</p>
                     </div>
-                    <div id="top-news-button">
-                        <input class="news-button" type="button" value="See More" />
+                    <div class="account-cart">
+                        <button data-modal-target="#modal" class="material-icons-outlined" id="person">person_outline</button>
+                        <button class="material-icons-outlined" id="cart">shopping_cart</button>
+                    </div>
+                </div>
+                <div class="navi-area">
+                    <div class="navi">
+                        <a href="../pizzaGod/menu.html">
+                            <input type="button" value="Menu" />
+                        </a>
+                        <input type="button" value="Promos" />
+                        <input type="button" value="Find Me" />
+                        <input type="button" value="More" />
                     </div>
                 </div>
             </div>
-            <div class="news">
 
+            <div class="footer">
+                <div class="signature">
+                    <p>@Made by Hongwei Shi</p>
+                </div>
             </div>
-        </div>
 
-        <div class="popup">
-            <!-- <button data-modal-target="#modal">Open Modal</button> -->
-            <div class="modal" id="modal">
-              <div class="modal-header">
-                <div class="title">LOG IN</div>
-                <button data-close-button class="close-button">&times;</button>
-              </div>
-              <div class="modal-body">
-                <p>hello</p>
-              </div>
+            <div class="main"> <!-- Main Frame -->
+                <div class="top-frame"> <!-- First Frame -->
+                    <div class="ads">
+                        <!-- Background img goes here -->
+                        <div id="ads-title">
+                            <p id="ads_text_1">NEW Shi's</p>
+                            <p id="ads_text_2">Unbelievable Secret</p>
+                            <p id="ads_text_3">Cheese Pizza</p>
+                        </div>
+                        <div class="ads-button">
+                            <input type="button" value="See More">
+                        </div>
+                    </div>
+                </div>
+                <div class="frame"> <!-- Second Fream -->
+                    <div class="news-area">
+                        <div class="news" style="background-image: url('../pizzaGod/imgs/chicken-wings-3.jpg'); background-position: center; background-size: cover;">
+                            <p class="news-text">NEW Spicy Chicken Wings</p>
+                            <input type="button" value="See More">
+                        </div>
+                        <div class="news" style="background-image: url('../pizzaGod/imgs/burger-2.jpg'); background-position: center; background-size: cover;">
+                            <p class="news-text">NEW Cheese Burger</p>
+                            <input type="button" value="See More">
+                        </div>
+                        <div class="news">
+                            <p class="news-text">Coming Soon</p>
+                        </div>
+                        <div class="news">
+                            <p class="news-text">Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="overlay"></div>
+
+            <div class="popup">
+                <!-- <button data-modal-target="#modal">Open Modal</button> -->
+                <div class="modal" id="modal">
+                  <div class="modal-header">
+                    <div class="title">LOG IN</div>
+                    <button data-close-button class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <p>hello</p>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
         </div>
     </body>
 </html>

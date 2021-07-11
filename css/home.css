@@ -1,19 +1,40 @@
-body {
-   margin: 0%;
-   user-select: none;
+html, body {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background-image: url("../imgs/wall.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.top-area {
-    background-color: white;
-    position: relative;
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 1200px;
+    background-color: tomato;
+}
+
+.header .title-area {
     width: 100%;
     height: 90px;
+    background-color: white;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.top-area .title {
+.title-area .title {
     font-size: 50px;
     font-family: 'Changa', sans-serif;
     color: tomato;
@@ -21,7 +42,11 @@ body {
     margin-left: 20px;
 }
 
-.top-area #person, .top-area #cart {
+.title-area .account-cart {
+    margin-right: 10px;
+}
+
+.account-cart #person, .account-cart #cart {
     background: none;
     border: none;
     color: tomato;
@@ -29,22 +54,22 @@ body {
     cursor: pointer;
 }
 
-.top-area #person:hover, .top-area #cart:hover {
+.account-cart #person:hover, .account-cart #cart:hover {
     color: white;
     background-color: tomato;
     transition: 0.5s;
     border-radius: 5px;
 
-    -webkit-animation: jello-horizontal 0.9s both;
-            animation: jello-horizontal 0.9s both;
+    -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.navi-area {
-    position: relative;
-    background-color: tomato;
+.header .navi-area {
+    width: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .navi input[type="button"] {
@@ -64,79 +89,142 @@ body {
     transition: 0.5s;
 
     -webkit-animation: jello-horizontal 0.9s both;
-            animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
 }
 
-.bot-area {
+.container .footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 1200px;
     background-color: tomato;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
-    bottom: 0%;
 }
 
-.bot-area .signature {
+.footer .signature {
     color: white;
+    font-family: "Roboto";
+    text-align: center;
 }
 
-.news-area {
-    position: relative;
-    background-color: whitesmoke;
-    height: auto;
+.container .main {
+    position: absolute;
+    width: 1200px;
+    top: 150px;
+    bottom: 50px;
+    background: whitesmoke;
+    overflow: auto;
 
     -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.news-area .top-news {
+.main .top-frame {
+    width: 100%;
+    height: 600px;
     display: flex;
     justify-content: center;
-    height: 600px;
+    align-items: center;
 }
 
-.top-news .top-news-ad {
-    width: 98%;
+.top-frame .ads {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 570px;
+    border-radius: 10px;
     background-image: url(../imgs/top_news.jpg);
     background-size: cover;
-    margin-top: 1%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.top-news #top-news-text {
-    position: fixed;
+.top-frame .ads:hover {
+    transition: 0,5s;
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.ads #ads-title {
     color: white;
     font-size: 70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 2px 4px orange;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: -50px;
 }
 
-.top-news #top-news-button {
-    position: relative;
-    margin-top: 530px;
-    margin-left: 30px;
+#ads-title #ads_text_2, #ads-title #ads_text_3 {
+    margin-top: -90px;
 }
 
-.news-button {
-    width: 100px;
-    height: 30px;
+.ads-button input[type="button"] {
+    width: 85px;
+    height: 25px;
     border-radius: 22px;
     border: 2px solid white;
     color: black;
     cursor: pointer;
+    margin-top: 235px;
+    margin-left: 20px;
 }
 
-.news-button:hover{
-    background-color: tomato;
+.ads-button input[type="button"]:hover {
+    background-color: lightsalmon;
     transition: 0.5s;
 }
 
-#top_news_text_2, #top_news_text_3 {
-    margin-top: -90px;
+.main .frame {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.popup {
-    position: relative;
+.frame .news-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
+
+.news-area .news {
+    width: 573px;
+    height: 300px;
+    background-color: orange;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.news-area .news:hover {
+    transition: 0,5s;
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.news .news-text {
+    color: white;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px tomato;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.news input[type="button"] {
+    width: 85px;
+    height: 25px;
+    border-radius: 22px;
+    border: 2px solid white;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 470px;
+    margin-top: 150px;
+}
+
+.news input[type="button"]:hover {
+    background-color: lightsalmon;
+    transition: 0.5s;
 }
