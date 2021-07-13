@@ -37,6 +37,7 @@ a {
 .title-area .title {
     font-size: 50px;
     font-family: 'Changa', sans-serif;
+    font-weight: bold;
     color: tomato;
     text-shadow: 2px 2px 3px black;
     margin-left: 20px;

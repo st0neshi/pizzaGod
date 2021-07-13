@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <META charset="utf-8" />
+        <title>popup login</title>
+
+        <link rel="stylesheet" href="../pizzaGod/css/cart.css"/>
+        <link rel="stylesheet" href="../pizzaGod/css/font_awesome/css/all.css"/>
+        <link rel="stylesheet" href="../pizzaGod/css/myAnimation.css" />
+        <link rel="stylesheet" href="../pizzaGod/css/font_awesome/css/all.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
+        
+        <script defer src="../pizzaGod/js/cart.js"></script>
+    </head>
+
+    <body>
+        <input data-login-target="#login" type="button" value="Log in"/>
+        <div class="login" id="login">
+            <div class="login-header">
+                <p class="login-title">Log In</p>
+                <button data-close-button id="login-close-button" class="material-icons">close</button>
+            </div>
+            <div class="login-main">
+                <form class="login-area">
+                    <span class="material-icons" id="account_circle">account_circle</span>
+                    <input type="email" placeholder="Email Address"/>
+                    <input type="password" placeholder="Password"/>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </div>
+            <div class="login-footer">
+                <p class="login-signup">Don't have a login? Sign up and get more promos!</p>
+            </div>
+        </div>
+        <div id=" overlay"></div>
+    </body>
+</html>
