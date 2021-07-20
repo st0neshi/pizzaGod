@@ -3,16 +3,17 @@
 <html>
     <head>
         <META charset="utf-8"/>
-        <title>Menu</title>
+        <title>Find Me</title>
 
         <link rel="stylesheet" href="../pizzaGod/css/home.css" />
-        <link rel="stylesheet" href="../pizzaGod/css/menu.css" />
+        <link rel="stylesheet" href="../pizzaGod/css/find-me.css" />
         <link rel="stylesheet" href="../pizzaGod/css/myAnimation.css" />
         <link rel="stylesheet" href="../pizzaGod/css/font_awesome/css/all.css" />
         <link rel="stylesheet" href="../pizzaGod/css/login.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
 
         <script defer src="../pizzaGod/js/login.js"></script>
+        <script defer src="./js/find-me.js"></script>
 
         <!-- Fronts links -->
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,7 +59,9 @@
             </div>
 
             <div class="main">
-                
+                <div id="map"></div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc8vhZJkJp_7_PseltfLjxCXYwePYTWZw&callback=initMap&libraries=&v=weekly" async>
+                </script>
             </div>
 
             <div class="login" id="login">
