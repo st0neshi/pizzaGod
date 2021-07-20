@@ -7,7 +7,7 @@ html, body {
     background-position: center;
 }
 
-a {
+.header a {
     text-decoration: none;
 }
 

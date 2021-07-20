@@ -6,14 +6,12 @@
         <title>Welcome to Shizza</title>
 
         <link rel="stylesheet" href="../pizzaGod/css/home.css" />
-        <!-- <link rel="stylesheet" href="../pizzaGod/css/cart.css" /> -->
         <link rel="stylesheet" href="../pizzaGod/css/myAnimation.css" />
         <link rel="stylesheet" href="../pizzaGod/css/font_awesome/css/all.css" />
         <link rel="stylesheet" href="../pizzaGod/css/login.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
         
         <script defer src="../pizzaGod/js/login.js"></script>
-        <!-- <script defer src="../pizzaGod/js/cart.js"></script> -->
 
         <!-- Fronts links -->
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +27,7 @@
                         <p>SHIZZA</p>
                     </div>
                     <div class="account-cart">
-                        <button data-modal-target="#modal" class="material-icons-outlined" id="person">person_outline</button>
+                        <button data-login-target="#login" class="material-icons-outlined" id="person">person_outline</button>
                         <button class="material-icons-outlined" id="cart">shopping_cart</button>
                     </div>
                 </div>
@@ -87,17 +85,26 @@
                 </div>
             </div>
 
-            <div class="popup">
-                <div class="modal" id="modal">
-                  <div class="modal-header">
-                    <div class="title">LOG IN</div>
-                    <button data-close-button class="close-button">&times;</button>
-                  </div>
-                  <div class="modal-body">
-                    <p>hello</p>
-                  </div>
+            <div class="login" id="login">
+                <div class="login-header">
+                    <p class="login-title">Log In</p>
+                    <button data-close-button id="login-close-button" class="material-icons">close</button>
                 </div>
-                <div id="overlay"></div>
+                <div class="login-main">
+                    <form class="login-area">
+                        <span class="material-icons" id="account_circle">account_circle</span>
+                        <input type="email" placeholder="Email Address"/>
+                        <input type="password" placeholder="Password"/>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+                <div class="login-footer">
+                    <p class="login-signup">
+                        <a href="./sign-up.html" target="_blank">Don't have a login? Sign up and get more promos!</a>
+                    </p>
+                </div>
+            </div>
+            <div id="overlay"></div>
             </div>
         </div>
     </body>

@@ -1,36 +1,37 @@
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+// For popup test using now
+const openLoginButtons = document.querySelectorAll('[data-login-target]');
+const closeLoginButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
+openLoginButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const login = document.querySelector(button.dataset.loginTarget)
+        openLogin(login)
+    })
 })
+
+closeLoginButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const login = button.closest('.login')
+        closeLogin(login)
+    })
+})
+
+function openLogin(login) {
+    if (login == null) return
+    login.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeLogin(login) {
+    if (login == null) return
+    login.classList.remove('active')
+    overlay.classList.remove('active')
+}
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
+    const login = document.querySelectorAll('.login.active')
+    login.forEach(login => {
+        closeLogin(login)
+    })
 })
-
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
-
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
-}
-
-function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
-}

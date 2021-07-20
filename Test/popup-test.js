@@ -34,4 +34,4 @@ overlay.addEventListener('click', () => {
     login.forEach(login => {
       closeLogin(login)
     })
-  })
+})

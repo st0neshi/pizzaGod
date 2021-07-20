@@ -1,54 +1,128 @@
-.modal {
+body {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+.login {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border-radius: 10px;
+    border: 1px solid tomato;
     z-index: 10;
-    background-color: tomato;
+    background-color: whitesmoke;
     width: 500px;
     max-width: 80%;
-  }
-  
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-header {
-    padding: 10px 15px;
+    height: 500px;
+}
+
+.login .login-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid white;
-  }
-  
-  .modal-header .title {
+    padding: 10px 15px;
+    background-color: tomato;
+    height: 60px;
+}
+
+.login-header .login-title {
     font-size: 1.25rem;
     font-weight: bold;
     color: white;
-  }
-  
-  .modal-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 40px;
-    color: white;
-  }
+}
 
-  .modal-header .close-button:hover {
+.login-header #login-close-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.login .login-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: tomato;
+    width: 100%;
+    height: 50px;
+}
+
+.login-footer .login-signup {
+    color: white;
+    text-align: center;
+}
+
+.login a {
+    text-decoration-color: white;
+}
+
+.login a:visited {
+    color: white;
+}
+
+.login-footer .login-signup:hover {
+    font-weight: bold;
+}
+
+.login .login-main {
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main .login-area {
+    text-align: center;
+}
+
+.login-area #account_circle {
+    font-size: 60px;
+    color: tomato;
+}
+
+.login-main input {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    background-color: none;
+    padding: 10px;
+    border-radius: 22px;
+    outline: none;
+    width: 200px;
+}
+
+.login-main input[type="email"],
+.login-main input[type="password"] {
+    border: 2px solid tomato;
+    color: tomato;
+}
+
+.login-main input[type="submit"] {
+    border: 2px solid white;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.login-main input[type="email"]:hover,
+.login-main input[type="password"]:hover {
+    border-color: #2ecc71;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.login-main input[type="submit"]:hover {
+    background-color: #2ecc71;
+    transition: 0.5s;
+}
+
+.login-header #login-close-button:hover {
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
-  }
-  
-  .modal-body {
-    padding: 10px 15px;
-    color: white;
-  }
-  
-  #overlay {
+}
+
+#overlay {
     position: fixed;
     opacity: 0;
     transition: 200ms ease-in-out;
@@ -58,9 +132,13 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
-  }
-  
-  #overlay.active {
+}
+
+#overlay.active {
     opacity: 1;
     pointer-events: all;
-  }
+}
+
+.login.active {
+    transform: translate(-50%, -50%) scale(1);
+}
