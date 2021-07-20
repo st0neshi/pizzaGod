@@ -1,7 +1,14 @@
 /* Set the size of the div element that contains the map */
-.main #map {
-    height: 100%;
-    /* The height is 400 pixels */
+.main .map-container {
     width: 100%;
-    /* The width is the width of the web page */
+    height: 100%;
+}
+
+.map-container #map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 99%;
+    width: 99%;
 }

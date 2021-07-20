@@ -59,9 +59,11 @@
             </div>
 
             <div class="main">
-                <div id="map"></div>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc8vhZJkJp_7_PseltfLjxCXYwePYTWZw&callback=initMap&libraries=&v=weekly" async>
-                </script>
+                <div class="map-container">
+                    <div id="map"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc8vhZJkJp_7_PseltfLjxCXYwePYTWZw&callback=initMap&libraries=&v=weekly" async>
+                    </script>
+                </div>
             </div>
 
             <div class="login" id="login">
@@ -78,7 +80,9 @@
                     </form>
                 </div>
                 <div class="login-footer">
-                    <p class="login-signup">Don't have a login? Sign up and get more promos!</p>
+                    <p class="login-signup">
+                        <a href="./sign-up.html" target="_blank">Don't have a login? Sign up and get more promos!</a>
+                    </p>
                 </div>
             </div>
             <div id="overlay"></div>
