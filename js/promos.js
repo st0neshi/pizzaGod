@@ -6,6 +6,10 @@ function copyTheCode(code) {
 
     document.execCommand("copy"); //API
 
-    alert("Copied!");
-}
+    // alert("Copied!");
+    document.getElementById('copy-alert').style.display = "block";
+    setTimeout(function() {
+        document.getElementById('copy-alert').style.display = "none";
+    }, 1500);
+};
 

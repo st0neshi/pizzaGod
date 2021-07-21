@@ -65,3 +65,18 @@
     outline: none;
     border-bottom: white solid 1px;
 }
+
+#copy-alert {
+    width: 20%;
+    text-align: center;
+    background-color: #2ecc71;
+    color: #fff;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    padding: 5px 0;
+    z-index: 1;
+    display: none;
+}
