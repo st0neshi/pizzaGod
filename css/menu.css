@@ -1,4 +1,69 @@
 .navi #menu-btn {
     color: white;
-    background-color: orange;
+    background-color: #2ecc71;
+}
+
+.main .menu-container {
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    /* background: lightgreen; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 210px;
+    margin-left: 6px;
+    padding: 0;
+    width: 10%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 50%;
+    overflow: auto;
+    background-color: tomato;
+    border-radius: 20px;
+    text-transform: uppercase;
+    
+    -webkit-animation: shadow-drop-2-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: lightsalmon;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    transition: 0.5s;
+}
+
+.menu-container .items-area {
+    margin-left: 13%;
+    height: auto;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.items-area .items {
+    width: 300px;
+    height: 300px;
+    background: coral;
+    margin: 18px;
 }
