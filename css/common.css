@@ -89,11 +89,6 @@ html, body {
     cursor: pointer;
 }
 
-.navi #home-btn {
-    color: white;
-    background-color: orange;
-}
-
 .navi input[type="button"]:hover {
     color: white;
     background-color: tomato;

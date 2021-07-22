@@ -12,3 +12,8 @@
     height: 99%;
     width: 99%;
 }
+
+.navi #find-me-btn {
+    color: white;
+    background-color: orange;
+}

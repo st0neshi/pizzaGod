@@ -80,3 +80,8 @@
     z-index: 1;
     display: none;
 }
+
+.navi #promos-btn {
+    color: white;
+    background-color: orange;
+}

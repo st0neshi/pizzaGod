@@ -5,7 +5,7 @@
         <META charset="utf-8"/>
         <title>Menu</title>
 
-        <link rel="stylesheet" href="../pizzaGod/css/home.css" />
+        <link rel="stylesheet" href="../pizzaGod/css/common.css" />
         <link rel="stylesheet" href="../pizzaGod/css/menu.css" />
         <link rel="stylesheet" href="../pizzaGod/css/myAnimation.css" />
         <link rel="stylesheet" href="../pizzaGod/css/font_awesome/css/all.css" />
@@ -29,24 +29,26 @@
                     </div>
                     <div class="account-cart">
                         <button data-login-target="#login" class="material-icons-outlined" id="person">person_outline</button>
-                        <button class="material-icons-outlined" id="cart">shopping_cart</button>
+                        <a href="./cart.html"><button class="material-icons-outlined" id="cart">shopping_cart</button></a>
                     </div>
                 </div>
                 <div class="navi-area">
                     <div class="navi">
                         <a href="./home.html">
-                            <input type="button" value="Home" />
+                            <input type="button" value="Home" id="home-btn"/>
                         </a>
                         <a href="../pizzaGod/menu.html">
-                            <input type="button" value="Menu" />
+                            <input type="button" value="Menu" id="menu-btn"/>
                         </a>
                         <a href="../pizzaGod/promos.html">
-                            <input type="button" value="Promos" />
+                            <input type="button" value="Promos" id="promos-btn"/>
                         </a>
                         <a href="./find-me.html">
-                            <input type="button" value="Find Me" />
+                            <input type="button" value="Find Me" id="find-me-btn"/>
                         </a>
-                        <input type="button" value="More" />
+                        <a href="./more.html">
+                            <input type="button" value="More" id="more-btn"/>
+                        </a>
                     </div>
                 </div>
             </div>
