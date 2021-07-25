@@ -16,7 +16,7 @@ ul {
     list-style-type: none;
     margin: 0;
     margin-top: 210px;
-    margin-left: 6px;
+    margin-left: 22px;
     padding: 0;
     width: 127px;
     background-color: #f1f1f1;
@@ -52,9 +52,9 @@ li a:hover:not(.active) {
 .menu-container .items-area {
     margin-left: 13%;
     height: auto;
-    background-color: lightsalmon;
+    background-color: transparent;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -65,11 +65,38 @@ li a:hover:not(.active) {
     width: 300px;
     height: 300px;
     background: coral;
-    margin: 18px;
+    margin: 8px 0 8px 8px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .items-area .items:hover {
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     cursor: pointer;
+}
+
+.items .items-layer {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 200px;
+    opacity: 1;
+}
+
+.items .items-layer:hover {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+
+.items-layer h2 {
+    color: white;
+    padding: 20px;
+}
+
+.items-layer h3 {
+    color: rgb(194, 194, 194);
+    margin: 30px 20px 0 20px;
 }
